@@ -45,6 +45,8 @@ func main() {
 }
 
 func printJSON(v interface{}) {
+	// This is required to print the <>
+
 	encoder := json.NewEncoder(os.Stdout)
 	encoder.SetEscapeHTML(false)
 	encoder.SetIndent("", "  ")
